@@ -1,6 +1,6 @@
 # 第三週 結構
 # 範例1
-```
+```c
 #include <stdio.h>
 struct POINT
 {
@@ -11,10 +11,11 @@ int main()
     stuct POINT a={4.1,3.2};
     printf("%f %f\n",a.x,a.y);
 }
-```c
+```
 
 # 範例2 (舊式寫法:c.x=b.x; c.y=b.y;)
-```
+
+```c
 #include <stdio.h>
 struct DATA{
     int x,y;
@@ -26,9 +27,9 @@ int main()
     struct DATA c;
     c=b;
 }
-```c
-# 範例3
 ```
+# 範例3
+```c
 #include <stdio.h>
 struct POINT
 {
@@ -43,11 +44,11 @@ int main()
     a.y=2;
      printf("%f %f\n",a.x,a.y);
 }
-```c
+```
 
 # 範例4
 
-```
+```c
 #include <stdio.h>
 struct DATA
 {
@@ -67,10 +68,10 @@ int main()
    c=b;
    printf("c: %d %d\n",c.x,c.y);
 }
-```c
+```
 
 # 範例5(難,結合指標及陣列)
-```
+```c
 #include <stdio.h>
 struct POINT{
     float x,y,z;
@@ -91,4 +92,4 @@ int main()
 
 }
 
-```C
+```
