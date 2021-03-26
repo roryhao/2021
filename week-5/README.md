@@ -1,5 +1,5 @@
-# 第五週 陣列與指標
-##難題
+# 第五週 字串排序
+# 又是一個絕望的一天(難題)
 # 步驟1
 ```c
 #include <stdio.h>
@@ -62,5 +62,38 @@ int main()
     {
         printf("右邊大\n");
     }
+}
+```
+
+# 完整版
+```c
+#include <stdio.h>
+#include <string.h>
+char line[100][10];
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	for(int i=0;i<n;i++)
+	{
+		scanf("%s",&line[i]);
+	}
+	char temp[10];///用來交換的temp字串
+	for(int i=0;i<n;i++)
+	{
+		for(int j=i+1;j<n;j++)
+		{
+			if(strcmp(line[i],line[j])>0)///大小錯
+			{
+				strcpy(temp,line[i]);	///temp=a;
+				strcpy(line[i],line[j]);///a=b;
+				strcpy(line[j],temp);	///b=temp;
+			}///就交換
+		}
+	}
+	for(int i=0;i<n;i++)
+	{
+		printf("%s\n",line[i]);
+	}
 }
 ```
