@@ -65,7 +65,7 @@ int main()
 }
 ```
 
-# 完整版
+# 合併完整版
 ```c
 #include <stdio.h>
 #include <string.h>
