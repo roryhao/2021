@@ -32,7 +32,7 @@ int main()
 }
 ```
 
-# 範例2
+# 步驟3
 ```c
 int main()
 {
@@ -41,6 +41,26 @@ int main()
     for(int i=0;i<5;i++)
     {
         printf("%s\n",line[i]);
+    }
+}
+```
+
+# 步驟4
+```c
+#include <stdio.h>
+#include <string.h>
+/// strcmp() strcopy ()
+int main()
+{
+    char line[10]="majority";
+    char line2[10]="ask";
+    if(strcmp(line,line2)>0)
+    {
+        printf("左邊大\n");
+    }
+    else
+    {
+        printf("右邊大\n");
     }
 }
 ```
