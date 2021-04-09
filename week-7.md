@@ -1,5 +1,6 @@
 
 # 第七週 字串排序-快速排列
+# 字串排列 2.0
 ```c
 #include <stdio.h>
 #include <string.h>
