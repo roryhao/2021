@@ -161,3 +161,24 @@ int main()
   }
 }
 ```
+##  UVA11321 排排排序, Part 1 先解決 Input, Output
+```c
+#incldue <stdio.h>
+int a[10000];
+int main()
+{
+  int n,m;
+  while(scanf("%d%d",&n,&m)==2)
+  {
+    for(int i=0;i<n;i++)
+    {
+      scanf("%d",a[i]);
+    }
+    printf("%d %d\n",n,m);
+    for(int i=0;i<n;i++)
+    {
+      printf("%d\n",a[i]);
+    }
+  }
+}
+```
