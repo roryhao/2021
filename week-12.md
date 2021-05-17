@@ -148,8 +148,6 @@ int main()
     {
       for(int i=0;i<N-1;i++)
       {
-        if(a[i]>a[i+1])
-        {
           if(a[i]>a[i+1])
           {
             int temp=a[i];
@@ -158,8 +156,7 @@ int main()
             ans++;
           }
         }
-      }
-    }
+     }
    printf("Optimal train swapping %d swaps.\n",ans);
   }
 }
