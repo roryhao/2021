@@ -1,4 +1,4 @@
-## 第十二週
+## 第12週
 ## 一顆星 UVA10062 告訴我頻率 Step01, Step02, Step03
 ```c
 #include <stdio.h>
@@ -105,6 +105,62 @@ int main()
     {
       if(ans[i]>0)printf("%d %d\n",i,ans[i]);
     }
+  }
+}
+```
+## UVA299 交換火車, 先解決 Input, Output
+```c
+#include <stdio.h>
+int a[100];
+int main()
+{
+  int T;
+  scanf("%d",&T);
+  for(int t=0;i<N;i++)
+  {
+    scanf("%d",&a[i]);
+    for(int i=0;i<N;i++)
+    {
+      scanf("%d",&a[i]);
+    }
+    int ans=0;
+   printf("Optimal train swapping %d swaps.\n",ans);
+  }
+}
+```
+## 利用泡泡排序法, 全部完成
+```c
+#include <stdio.h>
+int a[100];
+int main()
+{
+  int T;
+  scanf("%d",&T);
+  for(int t=0;i<N;i++)
+  {
+    scanf("%d",&a[i]);
+    for(int i=0;i<N;i++)
+    {
+      scanf("%d",&a[i]);
+    }
+    int ans=0;
+    for(int k=0;k<N-1;k++)
+    {
+      for(int i=0;i<N-1;i++)
+      {
+        if(a[i]>a[i+1])
+        {
+          if(a[i]>a[i+1])
+          {
+            int temp=a[i];
+            a[i]=a[i+1];
+            a[i+1]=temp;
+            ans++;
+          }
+        }
+      }
+    }
+   printf("Optimal train swapping %d swaps.\n",ans);
   }
 }
 ```
