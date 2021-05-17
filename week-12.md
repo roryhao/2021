@@ -182,3 +182,30 @@ int main()
   }
 }
 ```
+## 之後步驟 發明函式幫交換
+```c
+#incldue <stdio.h>
+int a[10000];
+void swag(int i,int j)
+{
+  int temp=a[i];
+  a[i]=a[j];
+  a[j]=temp;
+}
+int main()
+{
+  int n,m;
+  while(scanf("%d%d",&n,&m)==2)
+  {
+    for(int i=0;i<n;i++)
+    {
+      scanf("%d",a[i]);
+    }
+    printf("%d %d\n",n,m);
+    for(int i=0;i<n;i++)
+    {
+      printf("%d\n",a[i]);
+    }
+  }
+}
+```
