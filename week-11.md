@@ -1,4 +1,4 @@
-## 第11週
+## 第十一週
 ## 1.示範課本的 qsort() 及 compare()函式
 ```c
 #include <stdio.h>
