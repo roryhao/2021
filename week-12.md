@@ -1,4 +1,4 @@
-## 第12週
+## 第十二週
 ## 一顆星 UVA10062 告訴我頻率 Step01, Step02, Step03
 ```c
 #include <stdio.h>
